@@ -57,3 +57,5 @@ At the moment it cuts out when it gets to a load of rules that only fire once at
 *You can interact with Hashcat as it runs/pause it by hitting space in the command prompt as this script runs*
 
 *This is a pretty dirty script that may not use the most efficient ways of chopping up outputs and parsing them*
+
+*At the moment it uses the --username option of hashcat as it is expecting the hash dump you use to have usernames and passwords - remove this option from every hashcat command if you just want to give it loads of hashes*
