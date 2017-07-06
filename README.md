@@ -53,3 +53,7 @@ Rev_Thing.log contains a run down of the individual rule lines as well as the co
 At the moment it cuts out when it gets to a load of rules that only fire once at most - these are output to a separate .rule file, so you can still include these if you wish.
 
 *It may take overnight or longer to do your first run if it is a big dictionary/hashdump*
+
+*You can interact with Hashcat as it runs/pause it by hitting space in the command prompt as this script runs*
+
+*This is a pretty dirty script that may not use the most efficient ways of chopping up outputs and parsing them*
