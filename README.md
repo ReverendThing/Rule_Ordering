@@ -30,4 +30,25 @@ Additionally, a rule that would work best on one domain's password complexity, m
 
 The goal is that over time, this process of continual improvement should still lead to a decent .rule that should be efficient with high-performance, and some of the issues inherent in this method should be overcome by numerous runs sifting out anomalies.
 
-Dependencies - Pandas, Numpy
+I need to add command line options so it does not all have to be hardcoded into the script
+
+I would like to port it to c#
+
+My variable names are terrible
+
+
+Dependencies:
+Pandas, Numpy
+
+Folder Structure and additional info:
+It is currently hardcoded to run hashcat64.exe and creates a RuleOrdering folder to store files as it works on them
+It is currently hardcoded to run on a file called hashes in a Hashes folder within the Hashcat folder
+It is currently hardcoded to use a dictionary called words.txt in a Dictionaries folder within the hashcat folder
+It is currently hardcoded to use all.rule (provided here) that should be in the rules folder
+
+It also outputs a few additional files, such as a finished dictionary of all words used with the rule - this could be developed to help also produce an efficient dictionary
+Rev_Thing.log should contain a run down of the individual rule lines as well as the count of how many times each rule hit after the one before it
+
+At the moment it cuts out when it gets to a load of rules that only fire once at most - these are output to a separate .rule file, so you can still include these if you wish.
+
+*It may take overnight or longer to do your first run if it is a big dictionary/hashdump*
